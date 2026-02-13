@@ -1,0 +1,32 @@
+========================================
+           MY SHELL MANUAL             
+========================================
+
+cd [DIRECTORY]
+    Change the current default directory to DIRECTORY.
+    If DIRECTORY is not present, report the current directory.
+    If the directory does not exist, an error is reported.
+
+dir [DIRECTORY]
+    List the contents of directory DIRECTORY.
+    If DIRECTORY is not specified, lists current directory.
+
+environ
+    List all environment variable strings.
+
+set VARIABLE VALUE
+    Change the value of VARIABLE to VALUE.
+    If VARIABLE was not previously set, it will be created.
+
+echo [COMMENT]
+    Display COMMENT on the display followed by a new line.
+    Multiple spaces/tabs may be reduced to a single space.
+
+help
+    Display this user manual using the more filter.
+
+pause
+    Pause shell operations until 'Enter' is pressed.
+
+quit
+    Quit the shell.
