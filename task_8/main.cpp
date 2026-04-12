@@ -2,7 +2,7 @@
 #include <vector>
 #include <cstdlib>
 #include <ctime>
-#include <bitset>
+#include <iomanip>
 #include "crypt.h"
 
 using namespace std;
@@ -52,10 +52,8 @@ int main() {
         cout << "Password: " << pwd << "\n";
         // Print the generated salt value in decimal
         cout << "Salt (Dec): " << salt << "\n";
-        // Print the resulting hash in decimal format
-        cout << "Final Hash (Dec): " << hash << "\n";
-        // Print the hash in binary format using bitset for visualization
-        cout << "Final Hash (Bin): " << bitset<64>(hash) << "\n";
+        // Print the resulting hash in hexadecimal format
+        cout << "Final Hash (Hex): " << hex << uppercase << setw(16) << setfill('0') << hash << dec << "\n";
         // Print a visual separator line
         cout << "------------------------------------------\n";
     }
